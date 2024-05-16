@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="414.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.a3.CadastroController">
+   <children>
+      <ImageView cache="true" cacheHint="SCALE_AND_ROTATE" fitHeight="150.0" fitWidth="200.0" layoutX="7.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resourses/patinhas.png" />
+         </image>
+      </ImageView>
+      <ImageView cache="true" cacheHint="SCALE_AND_ROTATE" fitHeight="150.0" fitWidth="200.0" layoutX="7.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resourses/patinhas.png" />
+         </image>
+      </ImageView>
+      <ImageView cache="true" cacheHint="SCALE_AND_ROTATE" fitHeight="150.0" fitWidth="200.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resourses/patinhas.png" />
+         </image>
+      </ImageView>
+      <ImageView cache="true" cacheHint="SCALE_AND_ROTATE" fitHeight="150.0" fitWidth="200.0" layoutX="553.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resourses/patinhas.png" />
+         </image>
+      </ImageView>
+      <ImageView cache="true" cacheHint="SCALE_AND_ROTATE" fitHeight="150.0" fitWidth="200.0" layoutX="553.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resourses/patinhas.png" />
+         </image>
+      </ImageView>
+      <ImageView cache="true" cacheHint="SCALE_AND_ROTATE" fitHeight="150.0" fitWidth="200.0" layoutX="553.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../resourses/patinhas.png" />
+         </image>
+      </ImageView>
+      <Label alignment="TOP_CENTER" cache="true" cacheHint="SCALE_AND_ROTATE" layoutX="178.0" layoutY="43.0" text="Cadastrar Animal à Fila" textAlignment="CENTER">
+         <font>
+            <Font name="Yu Gothic Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="adicionarButton" onAction="#adicionarButtonClicked" layoutX="234.0" layoutY="310.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="172.0" text="Adicionar à Fila">
+         <font>
+            <Font name="Yu Gothic Regular" size="18.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="nomeTextArea" layoutX="151.0" layoutY="106.0" prefHeight="38.0" prefWidth="339.0" promptText="Digite o nome do Animal" />
+      <Label alignment="TOP_CENTER" cache="true" cacheHint="SCALE_AND_ROTATE" layoutX="147.0" layoutY="157.0" text="qual é a gravidade para atendimento?" textAlignment="CENTER" textFill="#b78047">
+         <font>
+            <Font name="Yu Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="gravidadeBox" layoutX="151.0" layoutY="182.0" prefWidth="150.0" />
+      <Label alignment="TOP_CENTER" cache="true" cacheHint="SCALE_AND_ROTATE" layoutX="151.0" layoutY="224.0" text="qual é o nível dos sintomas?" textAlignment="CENTER" textFill="#b78047">
+         <font>
+            <Font name="Yu Gothic Bold" size="12.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="sintomasBox" layoutX="151.0" layoutY="248.0" prefWidth="150.0" />
+      <Button fx:id="voltarButton" layoutX="257.0" layoutY="370.0" mnemonicParsing="false" onAction="#handlevoltarButtonAction" prefHeight="29.0" prefWidth="127.0" text="Voltar ao Início">
+         <font>
+            <Font name="Yu Gothic Regular" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
